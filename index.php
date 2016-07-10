@@ -28,9 +28,6 @@ foreach($questions as $q) {
     
     foreach($answers as $a) {
         $q->answer($a);
-        
-        
-        
         echo 'Your answer: <strong>' . $q->getHTML($a) . '</strong>; ';
         echo 'Scope: <strong>' . $q->scope . '</strong><br>';
     }
